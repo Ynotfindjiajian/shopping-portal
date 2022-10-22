@@ -1,4 +1,3 @@
-
 pipeline {
   agent any
   stages {
@@ -23,9 +22,9 @@ pipeline {
       }
     }
 
-    stage('artifact') {
+    stage('Archive') {
       steps {
-        archiveArtifacts '**/distribution/*.zip'
+        archiveArtifacts '**/distribute/*.zip'
       }
     }
 
